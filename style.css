@@ -5,6 +5,13 @@ body{
 #coins{
   margin-top: 10rem;
 }
+p.text-center{
+  font-size: 120%;
+  font-weight: bold;
+}
+.disabled{
+  display: none !important;
+}
 .calculator{
   background: #fff;
   min-height: 575px;
@@ -21,43 +28,53 @@ body{
   padding-top: 25px;
 }
 .coin-total{
-  box-shadow: inset 0px 0px 2px #969696;
-  padding: 5px 0px;
+  padding: 0px 15px;
   margin-top: 30px;
-  width: 75%;
+  width: 70%;
   height: 40px;
+  background: #f9f9f9;
+  border: 1px solid #9e9e9e;
 }
 .coin-button{
   padding: 5px 0px;
-  width: 75%;
+  width: 70%;
   height: 45px;
   background: #000;
   color: #fff;
   font-size: 120%;
+  border: none;
 }
 .pad-40{
   padding-top: 40px !important;
 }
 .quarter span,.dime span{
   position: relative;
-  top: 2.25rem;
-  left: 2.5rem;
-  font-size: 110%;
+  top: 2rem;
+  left: 2.25rem;
+  font-size: 140%;
+  color: #9e9e9e;
 }
 .nickel span,.penny span{
   position: relative;
-  top: 2.25rem;
+  top: 2rem;
   left: 2.75rem;
-  font-size: 110%;
+  font-size: 140%;
+  color: #9e9e9e;
 }
 #quarter,#dime,#nickel,#penny{
   background: #000;
   position: relative;
-  width: 30px;
-  height: 30px;
-  color: #fff;
-  top: -0.5rem;
-  left: 3.5rem;
+  top: -1.75rem;
+  left: 4.5rem;
   padding: 4px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+#quarter span,#dime span,#nickel span,#penny span{
+  position: relative;
+  top: -0.25rem;
+  left: 0.2rem;
+  color: #fff;
   font-size: 80%;
 }
