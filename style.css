@@ -7,8 +7,57 @@ body{
 }
 .calculator{
   background: #fff;
-  min-height: 450px;
+  min-height: 575px;
   min-width: 150px;
   box-shadow: 1px 1px 1px #e3e3e3;
   padding: 30px 15px;
+}
+.quarter,.dime,.nickel,.penny{
+  min-height: 100px;
+  min-width: 100px;
+  background: #e6e6e6;
+}
+.row.justify-content-center{
+  padding-top: 25px;
+}
+.coin-total{
+  box-shadow: inset 0px 0px 2px #969696;
+  padding: 5px 0px;
+  margin-top: 30px;
+  width: 75%;
+  height: 40px;
+}
+.coin-button{
+  padding: 5px 0px;
+  width: 75%;
+  height: 45px;
+  background: #000;
+  color: #fff;
+  font-size: 120%;
+}
+.pad-40{
+  padding-top: 40px !important;
+}
+.quarter span,.dime span{
+  position: relative;
+  top: 2.25rem;
+  left: 2.5rem;
+  font-size: 110%;
+}
+.nickel span,.penny span{
+  position: relative;
+  top: 2.25rem;
+  left: 2.75rem;
+  font-size: 110%;
+}
+#quarter,#dime,#nickel,#penny{
+  background: #000;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  top: -0.5rem;
+  left: 3.5rem;
+  padding: 4px;
+  font-size: 80%;
 }
