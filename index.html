@@ -14,13 +14,13 @@
             <div class="row justify-content-center">
               <div class="col-xs-4">
                 <div class="quarter rounded-circle">
-                  <span contenteditable="true">25</span>
+                  <span contenteditable="true" id="one">25</span>
                   <div id="quarter" class="rounded-circle disabled"></div>
                 </div>
               </div>
               <div class="col-xs-4 offset-1">
                 <div class="dime rounded-circle">
-                  <span contenteditable="true">10</span>
+                  <span contenteditable="true" id="two">10</span>
                   <div id="dime" class="rounded-circle disabled"></div>
                 </div>
               </div>
@@ -28,13 +28,13 @@
             <div class="row justify-content-center">
               <div class="col-xs-4">
                 <div class="nickel rounded-circle">
-                  <span contenteditable="true">5</span>
+                  <span contenteditable="true" id="three">5</span>
                   <div id="nickel" class="rounded-circle disabled"></div>
                 </div>
               </div>
               <div class="col-xs-4 offset-1">
                 <div class="penny rounded-circle">
-                  <span contenteditable="true">1</span>
+                  <span contenteditable="true" id="four">1</span>
                   <div id="penny" class="rounded-circle disabled"></div>
                 </div>
               </div>
@@ -43,7 +43,7 @@
               <input type="text" id="cents" class="coin-total">
             </div>
             <div class="row justify-content-center">
-                <input type="button" id="calculate" value="CALCULATE" class="coin-button" onclick="Cal()">
+                <input type="button" id="calculate" value="CALCULATE" class="coin-button" onclick="calculate()">
           </div><!-- end calculator -->
         </div><!-- end col-md-4 -->
       </div><!-- #1 .row.justify-content-center-->
