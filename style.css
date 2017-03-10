@@ -2,50 +2,54 @@ body{
   background: #f3f3f3;
   font-family: 'Raleway', sans-serif;
 }
-#coins{
-  margin-top: 10rem;
+input{
+  direction: rtl !important;
+  clear: both;
 }
 p.text-center{
   font-size: 120%;
   font-weight: bold;
 }
-.disabled{
-  display: none !important;
-}
-.calculator{
-  background: #fff;
-  min-height: 575px;
-  min-width: 150px;
-  box-shadow: 1px 1px 1px #e3e3e3;
-  padding: 30px 15px;
-}
-.quarter,.dime,.nickel,.penny{
-  min-height: 100px;
-  min-width: 100px;
-  background: #e6e6e6;
-}
-.row.justify-content-center{
-  padding-top: 25px;
+#coins{
+  margin-top: 10rem;
 }
 .coin-total{
   padding: 0px 15px;
   margin-top: 30px;
-  width: 70%;
+  width: 100%;
   height: 40px;
   background: #f9f9f9;
   border: 1px solid #9e9e9e;
 }
 .coin-button{
   padding: 5px 0px;
-  width: 70%;
+  width: 100%;
   height: 45px;
   background: #000;
   color: #fff;
   font-size: 120%;
   border: none;
 }
+.calculator{
+  background: #fff;
+  min-height: 550px;
+  min-width: 150px;
+  box-shadow: 1px 1px 1px #e3e3e3;
+  padding: 30px 50px;
+}
+.disabled{
+  display: none !important;
+}
+.row.justify-content-center{
+  padding-top: 25px;
+}
 .pad-40{
   padding-top: 40px !important;
+}
+.quarter,.dime,.nickel,.penny{
+  min-height: 100px;
+  min-width: 100px;
+  background: #e6e6e6;
 }
 .quarter span,.dime span{
   position: relative;
@@ -77,4 +81,27 @@ p.text-center{
   left: 0.2rem;
   color: #fff;
   font-size: 80%;
+}
+@media screen and (max-width:320px){
+  .calculator{
+    padding: 10px 10px !important;
+  }
+  .quarter,.dime,.nickel,.penny{
+    min-height: 70px;
+    min-width: 70px;
+  }
+  .coin-total,.coin-button{
+    width: 75%;
+  }
+  .calculator{
+    min-height: 450px;
+  }
+  .nickel span, .penny span{
+    top: 1rem;
+    left: 1.75rem;
+  }
+  .quarter span, .dime span{
+    top: 1rem;
+    left: 1.5rem;
+  }
 }
